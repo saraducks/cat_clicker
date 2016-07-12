@@ -13,7 +13,21 @@
    <img id='123' src="http://efdreams.com/data_images/dreams/cat/cat-08.jpg" alt="singing cat" width="50%" height="50%">
    <img id= '456' src="http://www.laughspark.info/thumbfiles/705X705/cute-cat-with-beanie-and-glasses-635731307117442594-13752.jpg" alt="cute_specs_cat" width="50%" height="50%">
  </div>
-<script src="jquery.js"></script>
-<script src="cat_click.js"></script>
+  <script type="text/javascript">
+  	var count = 0;
+  	var count2 = 0;
+  	var elem = document.getElementById('123');
+  	    elem.addEventListener("click",function(){
+        count = count + 1;
+        console.log(count);
+        document.getElementById('999').value = count; 
+  	},false);
+  	var elem1 = document.getElementById('456');
+  	elem1.addEventListener("click",function(){
+  		count2 = count2 + 1;
+        console.log(count2);
+        document.getElementById('000').value = count2; 
+  	},false);
+  </script>
 </body>
 </html>
