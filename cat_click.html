@@ -6,9 +6,12 @@
 <body>
 	<div>
 		<h2 data-bind="text: name"></h2>
-		<div data-bind="text: clickCount"></div>
+		<div data-bind="text: clickCount "></div>
+		<div data-bind="visible: nickNameAccordintToCounter"><h4 data-bind="text: nickname"></h4> </div>
 		<img src="" alt="cute cat" data-bind="click: incrementCounter,attr: {src: imgSrc}">
-	</div>
+		<div data-bind="foreach : list">
+			<li><span data-bind="text: name"></span></li>
+		</div>
 	<script src="js/lib/knockout-3.2.0.js"></script>
 	<script src="js/cat_clicker.js"></script>
 </body>
